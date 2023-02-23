@@ -1,0 +1,327 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>约数个数 · 蓝桥杯真题</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02 寻找2020.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第十一届省赛Java C组（第二场）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="01 约数个数.html">
+            
+                <a href="01 约数个数.html">
+            
+                    
+                    约数个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="02 寻找2020.html">
+            
+                <a href="02 寻找2020.html">
+            
+                    
+                    寻找2020
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03 跑步锻炼.html">
+            
+                <a href="03 跑步锻炼.html">
+            
+                    
+                    跑步锻炼
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../常用API.html">
+            
+                <a href="../常用API.html">
+            
+                    
+                    常用API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../参考文献.html">
+            
+                <a href="../参考文献.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >约数个数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;&#x63CF;&#x8FF0;"><b></b>&#x95EE;&#x9898;&#x63CF;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#&#x7B54;&#x6848;&#x63D0;&#x4EA4;"><b></b>&#x7B54;&#x6848;&#x63D0;&#x4EA4;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x7B54;&#x6848;"><b></b>&#x53C2;&#x8003;&#x7B54;&#x6848;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;&#x4EE3;&#x7801;"><b></b>&#x53C2;&#x8003;&#x4EE3;&#x7801;</a></li></ul></div><a href="#&#x95EE;&#x9898;&#x63CF;&#x8FF0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x95EE;&#x9898;&#x63CF;&#x8FF0;"><a name="&#x95EE;&#x9898;&#x63CF;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;&#x63CF;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;&#x63CF;&#x8FF0;</h1>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x80FD;&#x6574;&#x9664;&#x8FD9;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x6570;&#x79F0;&#x4E3A;&#x8FD9;&#x4E2A;&#x6570;&#x7684;&#x7EA6;&#x6570;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;1, 2, 3, 6 &#x90FD;&#x662F; 6 &#x7684;&#x7EA6;&#x6570;&#x3002;</p>
+<p>&#x8BF7;&#x95EE; 78120 &#x6709;&#x591A;&#x5C11;&#x4E2A;&#x7EA6;&#x6570;&#x3002;</p>
+<h1 id="&#x7B54;&#x6848;&#x63D0;&#x4EA4;"><a name="&#x7B54;&#x6848;&#x63D0;&#x4EA4;" class="anchor-navigation-ex-anchor" href="#&#x7B54;&#x6848;&#x63D0;&#x4EA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B54;&#x6848;&#x63D0;&#x4EA4;</h1>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x9053;&#x7ED3;&#x679C;&#x586B;&#x7A7A;&#x7684;&#x9898;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x8981;&#x7B97;&#x51FA;&#x7ED3;&#x679C;&#x540E;&#x63D0;&#x4EA4;&#x5373;&#x53EF;&#x3002;&#x672C;&#x9898;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x5728;&#x63D0;&#x4EA4;&#x7B54;&#x6848;&#x65F6;&#x53EA;&#x586B;&#x5199;&#x8FD9;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x586B;&#x5199;&#x591A;&#x4F59;&#x7684;&#x5185;&#x5BB9;&#x5C06;&#x65E0;&#x6CD5;&#x5F97;&#x5206;&#x3002;</p>
+<h1 id="&#x53C2;&#x8003;&#x7B54;&#x6848;"><a name="&#x53C2;&#x8003;&#x7B54;&#x6848;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x7B54;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x7B54;&#x6848;</h1>
+<p>96</p>
+<h1 id="&#x53C2;&#x8003;&#x4EE3;&#x7801;"><a name="&#x53C2;&#x8003;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x4EE3;&#x7801;</h1>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">int</span> result = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">78120</span>; i++) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-number">78120</span> % i == <span class="hljs-number">0</span>) {
+                result++;
+            }
+        }
+        System.out.println(result);
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="02 寻找2020.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 寻找2020">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"约数个数","level":"1.2.1","depth":2,"next":{"title":"寻找2020","level":"1.2.2","depth":2,"path":"articles/00 第十一届省赛Java C组（第二场）/02 寻找2020.md","ref":"articles/00 第十一届省赛Java C组（第二场）/02 寻找2020.md","articles":[]},"previous":{"title":"第十一届省赛Java C组（第二场）","level":"1.2","depth":1,"ref":"","articles":[{"title":"约数个数","level":"1.2.1","depth":2,"path":"articles/00 第十一届省赛Java C组（第二场）/01 约数个数.md","ref":"articles/00 第十一届省赛Java C组（第二场）/01 约数个数.md","articles":[]},{"title":"寻找2020","level":"1.2.2","depth":2,"path":"articles/00 第十一届省赛Java C组（第二场）/02 寻找2020.md","ref":"articles/00 第十一届省赛Java C组（第二场）/02 寻找2020.md","articles":[]},{"title":"跑步锻炼","level":"1.2.3","depth":2,"path":"articles/00 第十一届省赛Java C组（第二场）/03 跑步锻炼.md","ref":"articles/00 第十一届省赛Java C组（第二场）/03 跑步锻炼.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","anchor-navigation-ex","katex","code","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":2,"family":"serif","theme":"white"},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"蓝桥杯真题","language":"zh-hans","gitbook":"*"},"file":{"path":"articles/00 第十一届省赛Java C组（第二场）/01 约数个数.md","mtime":"2023-02-23T15:39:01.365Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T17:39:58.473Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

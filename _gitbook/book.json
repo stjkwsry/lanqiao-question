@@ -1,0 +1,31 @@
+{
+	"title": "蓝桥杯真题",
+	"language": "zh-hans",
+	"styles": {
+		"website": "styles/website.css"
+	},
+	"plugins": [
+		"-sharing",
+		"anchor-navigation-ex",
+		"katex",
+		"code"
+	],
+	"pluginsConfig": {
+		"fontSettings": {
+			"size": 2,
+			"family": "serif",
+			"theme": "white"
+		},
+		"anchor-navigation-ex": {
+			"tocLevel1Icon": "fa fa-hand-o-right",
+			"tocLevel2Icon": "fa fa-hand-o-right",
+			"tocLevel3Icon": "fa fa-hand-o-right",
+			"multipleH1": false,
+			"multipleH2": false,
+			"multipleH3": false,
+			"multipleH4": false,
+			"showLevelIcon": false,
+			"showLevel": false
+		}
+	}
+}
