@@ -92,12 +92,19 @@ kbd {
 
 /* 标签 */
 
+.tag-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .tag {
 	margin: .5rem;
     padding: .5rem;
     border-radius: 10px;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 
