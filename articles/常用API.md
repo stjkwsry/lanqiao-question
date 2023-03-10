@@ -88,6 +88,11 @@ String s = Integer.toHexString(123);
 import java.util.*;
 
 int[] arr; 
+// 升序排序
+Arrays.sort(arr);
+// 基本数据类型封装类数组支持降序排序
+Integer[] arr;
+Arrays.sort(arr, Collections.reverseOrder());
 // 以“[1, 2, 3]”格式输出
 Arrays.toString(arr);
 
